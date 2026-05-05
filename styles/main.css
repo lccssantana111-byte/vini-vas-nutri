@@ -1339,7 +1339,7 @@ button { font-family: var(--font-body); cursor: pointer; border: none; backgroun
   }
   .problema-label-col { position: static; }
   .problema-label-col .label { font-size: 10px; }
-  .problema-lead { font-size: clamp(22px, 5.5vw, 34px); line-height: 1.35; }
+  .problema-lead { font-size: clamp(30px, 8vw, 42px); line-height: 1.25; }
 
   /* --- MÉTODO --- */
   .metodo-grid { grid-template-columns: 1fr; }
@@ -1515,7 +1515,7 @@ button { font-family: var(--font-body); cursor: pointer; border: none; backgroun
   .hero-mode-badges { flex-wrap: wrap; }
 
   /* PROBLEMA */
-  .problema-lead  { font-size: clamp(24px, 7vw, 34px); }
+  .problema-lead  { font-size: clamp(28px, 8vw, 38px); }
   .problema-body  { font-size: 16px; line-height: 1.7; }
   .problema-quote { font-size: 15px; padding-left: 16px; line-height: 1.65; }
 

@@ -17,10 +17,10 @@ html { scroll-behavior: smooth; }
 ========================================= */
 :root {
   --color-bg:         #F5F7F6;
-  --color-surface:    #D9E1DF;
+  --color-surface:    #EFECE5;
   --color-sage:       #6F8F8A;
   --color-sage-dark:  #244F5A;
-  --color-sage-light: #D9E1DF;
+  --color-sage-light: transparent;
   --color-text:       #2C2C2C;
   --color-text-muted: #6B6B6B;
   --color-white:      #FFFFFF;
@@ -65,7 +65,7 @@ button { font-family: var(--font-body); cursor: pointer; border: none; backgroun
 }
 .label {
   font-family: var(--font-body);
-  font-size: 11px;
+  font-size: clamp(11px, 2.5vw, 12px);
   font-weight: 500;
   letter-spacing: 0.18em;
   text-transform: uppercase;
@@ -394,32 +394,49 @@ button { font-family: var(--font-body); cursor: pointer; border: none; backgroun
   height: 100%;
   min-height: unset;
   clip-path: polygon(8% 0, 100% 0, 100% 100%, 0% 100%);
+  background: transparent;
 }
 
 @media (max-width: 960px) {
   .hero {
-    grid-template-columns: 1fr;
-    min-height: auto;
-    padding-top: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100dvh;
+    height: 100dvh;
+    padding-top: 62px;
+    background: none;
+    overflow: hidden;
   }
   .hero-photo {
     position: relative;
-    right: auto; top: auto; bottom: auto;
     width: 100%;
-    order: -1;
-    height: 80vw;
-    min-height: 320px;
-    max-height: 600px;
+    flex: 1 1 0;
+    min-height: 0;
+    margin-top: 0;
+    top: auto; right: auto; bottom: auto;
+    z-index: auto;
+    order: 1;
   }
   .hero-photo::before { display: none; }
   .hero-photo .photo-frame {
+    width: 100%;
     height: 100%;
-    min-height: unset;
     clip-path: none;
     background: transparent;
   }
+  .hero-photo .photo-frame img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center center;
+  }
   .hero-content {
-    padding: 48px var(--gutter) var(--sec-y);
+    position: static;
+    z-index: auto;
+    background: none;
+    padding: 28px var(--gutter) 32px;
+    order: 2;
+    flex-shrink: 0;
   }
 }
 
@@ -482,7 +499,7 @@ button { font-family: var(--font-body); cursor: pointer; border: none; backgroun
   font-weight: 400;
   color: var(--color-text-muted);
   padding: 7px 14px;
-  background: var(--color-surface);
+  background: #D9E1DF;
   border-radius: 2px;
   letter-spacing: .02em;
 }
@@ -493,7 +510,7 @@ button { font-family: var(--font-body); cursor: pointer; border: none; backgroun
    SECTION 3 — MÉTODO VAS
 ========================================= */
 .metodo {
-  background: var(--color-surface);
+  background: #D9E1DF;
   padding: var(--sec-y) var(--gutter);
   position: relative;
 }
@@ -541,7 +558,7 @@ button { font-family: var(--font-body); cursor: pointer; border: none; backgroun
   font-family: var(--font-display);
   font-size: 60px;
   font-weight: 300;
-  color: var(--color-sage-light);
+  color: #D9E1DF;
   line-height: 1;
   margin-bottom: 20px;
 }
@@ -580,6 +597,10 @@ button { font-family: var(--font-body); cursor: pointer; border: none; backgroun
 .sobre-content {
   padding-top: 24px;
   padding-bottom: 44px;
+}
+.sobre-col {
+  display: flex;
+  flex-direction: column;
 }
 .sobre-cta {
   margin-top: 36px;
@@ -688,7 +709,7 @@ button { font-family: var(--font-body); cursor: pointer; border: none; backgroun
    SECTION 5 — DEPOIMENTOS
 ========================================= */
 .depoimentos {
-  background: var(--color-surface);
+  background: #D9E1DF;
   padding: var(--sec-y) var(--gutter);
   overflow: hidden;
 }
@@ -750,6 +771,8 @@ button { font-family: var(--font-body); cursor: pointer; border: none; backgroun
   display: flex;
   align-items: center;
   gap: 16px;
+  border-top: 1px solid #D9E1DF;
+  padding-top: 20px;
 }
 .author-avatar {
   width: 52px;
@@ -840,7 +863,7 @@ button { font-family: var(--font-body); cursor: pointer; border: none; backgroun
   font-family: var(--font-display);
   font-size: 76px;
   font-weight: 300;
-  color: var(--color-sage-light);
+  color: #D9E1DF;
   line-height: 1;
   margin-bottom: 28px;
   position: relative;
@@ -886,7 +909,7 @@ button { font-family: var(--font-body); cursor: pointer; border: none; backgroun
   align-items: center;
 }
 .cta-final-content .label {
-  color: var(--color-sage-light);
+  color: #D9E1DF;
   display: block;
   margin-bottom: 28px;
 }
@@ -1026,7 +1049,7 @@ button { font-family: var(--font-body); cursor: pointer; border: none; backgroun
    SECTION — RESULTADOS (antes e depois)
 ========================================= */
 .resultados {
-  background: var(--color-surface);
+  background: #D9E1DF;
   padding-block: var(--sec-y);
   overflow: hidden;
   position: relative;
@@ -1211,7 +1234,7 @@ button { font-family: var(--font-body); cursor: pointer; border: none; backgroun
   border-radius: 50%;
   overflow: hidden;
   border: 2px solid var(--color-gold);
-  background: var(--color-sage-light);
+  background: #D9E1DF;
   flex-shrink: 0;
 }
 .result-avatar img {
@@ -1264,22 +1287,38 @@ button { font-family: var(--font-body); cursor: pointer; border: none; backgroun
 
   /* --- HERO --- */
   .hero-content {
-    padding: 48px var(--gutter) 56px;
+    padding: 40px var(--gutter) 56px;
+    order: 2;
+  }
+  .hero-photo {
+    order: 1;
   }
   .hero-headline {
-    font-size: clamp(38px, 9vw, 60px);
+    font-size: clamp(42px, 10vw, 64px);
     line-height: 1.05;
     margin-bottom: 20px;
   }
   .hero-sub {
-    font-size: 15px;
-    line-height: 1.5;
+    font-size: clamp(15px, 3.5vw, 17px);
+    line-height: 1.6;
     margin-bottom: 36px;
     max-width: 100%;
   }
-  .hero-actions { width: 100%; }
+  .hero-badge { justify-content: center; }
+  .hero-actions { width: 100%; align-items: center; }
   .hero-actions .btn-primary { width: 100%; justify-content: center; }
-  .hero-mode-badges { gap: 8px; }
+  .hero-mode-badges { gap: 8px; justify-content: center; }
+
+  /* Oculta quebras de linha forçadas nas headlines — o texto flui livre no mobile */
+  .metodo-headline br,
+  .sobre-headline br,
+  .depo-headline br,
+  .resultados-headline br,
+  .como-headline br,
+  .clinicas-headline br,
+  .cta-headline br,
+  .problema-quote br,
+  .clinicas-sub br { display: none; }
 
   /* --- PROBLEMA --- */
   .problema .container {
@@ -1287,7 +1326,8 @@ button { font-family: var(--font-body); cursor: pointer; border: none; backgroun
     gap: 28px;
   }
   .problema-label-col { position: static; }
-  .problema-lead { font-size: clamp(22px, 5.5vw, 34px); }
+  .problema-label-col .label { font-size: 10px; }
+  .problema-lead { font-size: clamp(22px, 5.5vw, 34px); line-height: 1.35; }
 
   /* --- MÉTODO --- */
   .metodo-grid { grid-template-columns: 1fr; }
@@ -1303,6 +1343,7 @@ button { font-family: var(--font-body); cursor: pointer; border: none; backgroun
   /* display:contents expõe os filhos ao flex pai para controle de order */
   .sobre-photo      { display: contents; }
   .sobre-photo-wrap { display: contents; }
+  .sobre-col        { display: contents; }
   /* Recriar decoração do desktop na photo-frame — sem overflow lateral */
   .sobre-photo .photo-frame {
     overflow: hidden;
@@ -1325,7 +1366,7 @@ button { font-family: var(--font-body); cursor: pointer; border: none; backgroun
   .sobre-content             { order: 1; padding-top: 0; padding-bottom: 0; }
   .sobre-photo .photo-frame  { order: 2; margin-top: 28px; aspect-ratio: 4/3; max-height: 380px; }
   .sobre-photo-caption       { order: 3; margin-top: 0; }
-  .sobre-cta                 { margin-top: 28px; }
+  .sobre-cta                 { order: 4; margin-top: 28px; }
   .sobre-cta .btn-primary    { width: 100%; justify-content: center; }
   .sobre-credentials {
     flex-direction: column;
@@ -1418,14 +1459,25 @@ button { font-family: var(--font-body); cursor: pointer; border: none; backgroun
   .step:not(:last-child) .step-num::after { display: none; }
 
   /* --- CTA FINAL --- */
-  .cta-final-inner { grid-template-columns: 1fr; gap: 0; }
-  .cta-deco { display: none; }
+  .cta-final-inner { grid-template-columns: 1fr; gap: 40px; }
+  .cta-deco {
+    display: flex;
+    flex-direction: row;
+    border: 1px solid rgba(255,255,255,.1);
+    border-radius: var(--radius);
+    overflow: hidden;
+  }
+  .cta-deco .cta-stat { flex: 1; padding: 20px 10px; text-align: center; }
+  .cta-deco .cta-stat .cta-stat-num { font-size: clamp(28px, 6vw, 42px); margin-bottom: 6px; }
+  .cta-deco .cta-stat .cta-stat-label { font-size: 10px; letter-spacing: .01em; line-height: 1.4; }
+  .cta-deco .cta-stat-divider { width: 1px; height: auto; margin: 16px 0; }
   .cta-sub  { margin-bottom: 32px; }
   .cta-socials { flex-wrap: wrap; gap: 14px; }
 
   /* --- FOOTER --- */
-  .footer-main { flex-direction: column; gap: 28px; }
-  .footer-links { align-items: flex-start; }
+  .footer-main { flex-direction: column; align-items: center; gap: 28px; text-align: center; }
+  .footer-links { align-items: center; }
+  .footer-copy { text-align: center; }
 }
 
 /* ---------- 480px e abaixo ---------- */
@@ -1437,34 +1489,38 @@ button { font-family: var(--font-body); cursor: pointer; border: none; backgroun
   .nav { padding: 14px var(--gutter); }
 
   /* HERO */
-  .hero-headline { font-size: clamp(34px, 10vw, 48px); line-height: 1.0; }
+  .hero-headline { font-size: clamp(36px, 10vw, 52px); line-height: 1.05; }
   .hero-badge { flex-wrap: wrap; gap: 8px; margin-bottom: 24px; }
-  .hero-sub   { font-size: 14px; }
+  .hero-sub   { font-size: clamp(15px, 4vw, 17px); line-height: 1.65; }
   .hero-mode-badges { flex-wrap: wrap; }
 
   /* PROBLEMA */
-  .problema-lead  { font-size: clamp(20px, 6vw, 28px); }
-  .problema-quote { font-size: 14px; padding-left: 16px; }
+  .problema-lead  { font-size: clamp(24px, 7vw, 34px); }
+  .problema-body  { font-size: 16px; line-height: 1.7; }
+  .problema-quote { font-size: 15px; padding-left: 16px; line-height: 1.65; }
 
   /* MÉTODO */
   .pilar { padding: 28px 18px; }
-  .metodo-headline { font-size: clamp(26px, 7vw, 38px); }
+  .metodo-headline { font-size: clamp(28px, 7.5vw, 42px); }
+  .pilar-title { font-size: 18px; }
+  .pilar-desc  { font-size: 15px; line-height: 1.65; }
 
   /* SOBRE */
-  .sobre-headline { font-size: clamp(28px, 8vw, 42px); }
+  .sobre-headline { font-size: clamp(30px, 8vw, 44px); }
+  .sobre-body { font-size: 16px; line-height: 1.75; }
   .sobre-photo .photo-frame { aspect-ratio: 3/2; }
 
   /* DEPOIMENTOS */
-  .depo-headline { font-size: clamp(26px, 7vw, 38px); }
+  .depo-headline { font-size: clamp(28px, 7.5vw, 40px); }
   .depo-card { padding: 24px 16px; gap: 18px; }
-  .depo-quote { font-size: 15px; }
+  .depo-quote { font-size: 15px; line-height: 1.7; }
 
   /* RESULTADOS */
   .video-card { width: 85vw; }
   .videos-track { gap: 12px; }
 
   /* CTA FINAL */
-  .cta-headline { font-size: clamp(32px, 8vw, 52px); }
+  .cta-headline { font-size: clamp(34px, 8.5vw, 54px); }
 
   /* FOOTER */
   .footer { padding: 40px var(--gutter) 28px; }
@@ -1472,7 +1528,8 @@ button { font-family: var(--font-body); cursor: pointer; border: none; backgroun
 
 /* ---------- 360px e abaixo ---------- */
 @media (max-width: 360px) {
-  .hero-headline { font-size: 32px; }
+  .hero-headline { font-size: clamp(32px, 9vw, 40px); line-height: 1.05; }
+  .hero-sub { font-size: 15px; }
   .hero-mode-badges .mode-badge { font-size: 11px; padding: 5px 12px; }
   .video-card { width: 85vw; }
 }
@@ -1514,7 +1571,7 @@ button { font-family: var(--font-body); cursor: pointer; border: none; backgroun
    CLÍNICAS
 ========================================= */
 .clinicas {
-  background: var(--color-surface);
+  background: #D9E1DF;
   padding: var(--sec-y) var(--gutter);
 }
 
@@ -1522,6 +1579,9 @@ button { font-family: var(--font-body); cursor: pointer; border: none; backgroun
   text-align: center;
   max-width: 560px;
   margin: 0 auto 64px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .clinicas-headline {

@@ -410,7 +410,7 @@ button { font-family: var(--font-body); cursor: pointer; border: none; backgroun
   .hero-photo {
     position: relative;
     width: 100%;
-    flex: 4 1 0;
+    flex: 5 1 0;
     min-height: 0;
     margin-top: 0;
     top: auto; right: auto; bottom: auto;
@@ -611,6 +611,11 @@ button { font-family: var(--font-body); cursor: pointer; border: none; backgroun
 }
 .sobre-cta {
   margin-top: 36px;
+  display: flex;
+  justify-content: flex-start;
+}
+.sobre-cta .btn-primary {
+  align-self: flex-start;
 }
 .sobre-photo-wrap {
   position: relative;
@@ -1312,7 +1317,7 @@ button { font-family: var(--font-body); cursor: pointer; border: none; backgroun
     margin-bottom: 16px;
     max-width: 100%;
   }
-  .hero-badge { justify-content: center; }
+  .hero-badge { justify-content: flex-start; }
   .hero-actions { width: 100%; align-items: center; }
   .hero-actions .btn-primary { width: 100%; justify-content: center; }
   .hero-mode-badges { gap: 8px; justify-content: center; }
@@ -1324,7 +1329,6 @@ button { font-family: var(--font-body); cursor: pointer; border: none; backgroun
   .resultados-headline br,
   .como-headline br,
   .clinicas-headline br,
-  .cta-headline br,
   .problema-quote br,
   .clinicas-sub br { display: none; }
 
@@ -1375,7 +1379,7 @@ button { font-family: var(--font-body); cursor: pointer; border: none; backgroun
   .sobre-photo .photo-frame  { order: 2; margin-top: 28px; aspect-ratio: 4/3; max-height: 380px; }
   .sobre-photo-caption       { order: 3; margin-top: 0; }
   .sobre-cta                 { order: 4; margin-top: 28px; display: flex; justify-content: center; }
-  .sobre-cta .btn-primary    { width: 100%; justify-content: center; }
+  .sobre-cta .btn-primary    { width: 100%; justify-content: center; align-self: center; }
   .sobre-credentials {
     flex-direction: column;
     align-items: flex-start;
@@ -1537,7 +1541,7 @@ button { font-family: var(--font-body); cursor: pointer; border: none; backgroun
   .videos-track { gap: 12px; }
 
   /* CTA FINAL */
-  .cta-headline { font-size: clamp(40px, 10vw, 60px); }
+  .cta-headline { font-size: clamp(46px, 12vw, 64px); line-height: 1.08; }
   .cta-deco .cta-stat .cta-stat-num { font-size: clamp(36px, 8vw, 52px); }
 
   /* FOOTER */
@@ -1571,7 +1575,7 @@ button { font-family: var(--font-body); cursor: pointer; border: none; backgroun
 
 /* CTA final mobile */
 @media (max-width: 520px) {
-  .cta-headline { font-size: clamp(34px, 9vw, 52px); }
+  .cta-headline { font-size: clamp(44px, 11vw, 60px); line-height: 1.08; }
   .cta-sub { margin-bottom: 28px; }
 }
 

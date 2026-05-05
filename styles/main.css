@@ -410,7 +410,7 @@ button { font-family: var(--font-body); cursor: pointer; border: none; backgroun
   .hero-photo {
     position: relative;
     width: 100%;
-    flex: 5 1 0;
+    flex: 6 1 0;
     min-height: 0;
     margin-top: 0;
     top: auto; right: auto; bottom: auto;
@@ -1317,7 +1317,9 @@ button { font-family: var(--font-body); cursor: pointer; border: none; backgroun
     margin-bottom: 16px;
     max-width: 100%;
   }
-  .hero-badge { justify-content: flex-start; }
+  .hero-badge { justify-content: center; }
+  .hero-headline { text-align: center; }
+  .hero-sub { text-align: center; }
   .hero-actions { width: 100%; align-items: center; }
   .hero-actions .btn-primary { width: 100%; justify-content: center; }
   .hero-mode-badges { gap: 8px; justify-content: center; }
@@ -1338,7 +1340,7 @@ button { font-family: var(--font-body); cursor: pointer; border: none; backgroun
     gap: 28px;
   }
   .problema-label-col { position: static; }
-  .problema-label-col .label { font-size: 10px; }
+  .problema-label-col .label { font-size: 13px; }
   .problema-lead { font-size: clamp(30px, 8vw, 42px); line-height: 1.25; }
 
   /* --- MÉTODO --- */

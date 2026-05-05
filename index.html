@@ -1,0 +1,1143 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Nutrição individualizada para mulheres que recusam o sacrifício como método. Consultas presenciais e online com Vinícius A. Santos, nutricionista especializado em emagrecimento e estética.">
+  <title>Vinícius A. Santos · Nutricionista | Emagrecimento Individualizado</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./styles/main.css">
+</head>
+
+<body>
+
+  <!-- NAV -->
+  <nav class="nav" id="nav" role="navigation" aria-label="Navegação principal">
+
+    <a href="#inicio" class="nav-brand" aria-label="VAS Nutrição — Vinícius A. Santos">
+      <img src="./images/logo-vas.png" alt="VAS — Vinícius A. Santos Nutricionista" class="nav-logo">
+    </a>
+
+    <ul class="nav-center" role="list">
+      <li><a href="#metodo">Método VAS</a></li>
+      <li><a href="#resultados">Resultados</a></li>
+      <li><a href="#sobre">Sobre</a></li>
+      <li><a href="#depoimentos">Depoimentos</a></li>
+      <li><a href="#clinicas">Clínicas</a></li>
+    </ul>
+
+    <a href="#" class="btn-nav" id="nav-cta" aria-label="Agendar consulta via WhatsApp">
+      <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+        <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z" />
+      </svg>
+      Agendar consulta
+    </a>
+
+    <button class="nav-toggle" id="nav-toggle" aria-label="Abrir menu" aria-expanded="false" aria-controls="nav-drawer">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+  </nav>
+
+  <!-- Mobile drawer -->
+  <div class="nav-drawer" id="nav-drawer" role="dialog" aria-label="Menu de navegação">
+    <a href="#metodo" class="nav-drawer-link">Método VAS</a>
+    <a href="#sobre" class="nav-drawer-link">Sobre</a>
+    <a href="#depoimentos" class="nav-drawer-link">Depoimentos</a>
+    <a href="#resultados" class="nav-drawer-link">Resultados</a>
+    <a href="#clinicas" class="nav-drawer-link">Clínicas</a>
+    <a href="#" class="btn-cta-mobile" id="nav-drawer-cta" aria-label="Agendar consulta via WhatsApp">
+      <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" style="width:18px;height:18px">
+        <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z" />
+      </svg>
+      Agendar consulta
+    </a>
+  </div>
+
+  <main>
+
+    <!-- HERO -->
+    <section class="hero" id="inicio" aria-label="Apresentação">
+
+      <div class="hero-content">
+
+        <div class="hero-badge fade-in">
+          <span class="label">Nutrição Individualizada</span>
+          <span class="hero-badge-dot" aria-hidden="true"></span>
+          <span class="label" style="color:var(--color-gold)">@vas.nutri</span>
+        </div>
+
+        <h1 class="hero-headline fade-in d1">
+          Resultados sem parar de <em>viver.</em>
+        </h1>
+
+
+        <p class="hero-sub fade-in d2">
+          Um protocolo construído ao redor da sua rotina, dos seus exames e dos prazeres que você não negocia.
+        </p>
+
+        <div class="hero-actions fade-in d3">
+          <a href="#" class="btn-primary" id="hero-cta" aria-label="Agendar consulta via WhatsApp">
+            <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+              <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z" />
+            </svg>
+            Agendar minha consulta
+          </a>
+
+          <div class="hero-mode-badges" aria-label="Modalidades de atendimento">
+            <span class="mode-badge">Presencial</span>
+            <span class="mode-badge">Online</span>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="hero-photo" aria-hidden="true">
+        <div class="photo-frame">
+          <img src="images/pexels-karola-g-5208248.jpg" alt="Abacate e granola em pratos brancos sobre fundo bege — alimentação natural e individualizada" loading="eager">
+        </div>
+      </div>
+
+    </section>
+
+
+    <!-- PROBLEMA -->
+    <section class="problema" id="problema" aria-label="Identificação com o problema">
+      <div class="container">
+
+        <div class="problema-label-col fade-in">
+          <span class="label">O que você já viveu</span>
+          <span class="gold-bar" style="margin-top:16px" aria-hidden="true"></span>
+        </div>
+
+        <div class="problema-content">
+
+          <h2 class="problema-lead fade-in d1">
+            Você não falhou.<br>
+            O método <em>não foi</em><br>
+            feito para você.
+          </h2>
+
+          <p class="problema-body fade-in d2">
+            Você já fez dieta. Já cortou carboidrato, já tentou jejum, já seguiu o plano
+            de algum influenciador. Funcionou por um tempo — e depois parou.
+          </p>
+
+          <p class="problema-body fade-in d2">
+            Não porque você não tem disciplina. Mas porque nenhum desses métodos foi
+            construído em torno da sua rotina, dos seus exames, da sua vida real.
+            Foram feitos para uma média — e você não é uma média.
+          </p>
+
+          <blockquote class="problema-quote fade-in d3">
+            "Existe um caminho que respeita quem você é.<br>
+            Isso é ciência aplicada à sua realidade."
+          </blockquote>
+
+          <div class="problema-tags fade-in d3" aria-label="O que pode mudar">
+            <span class="problema-tag">Resultado sustentável</span>
+            <span class="problema-tag">Sem restrições descabidas</span>
+            <span class="problema-tag">Sem abrir mão dos prazeres</span>
+            <span class="problema-tag">Plano feito para você</span>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+
+    <!-- MÉTODO VAS -->
+    <section class="metodo" id="metodo" aria-label="O Método VAS">
+      <div class="container">
+
+        <header class="metodo-header">
+          <span class="label fade-in">Método VAS</span>
+          <h2 class="metodo-headline fade-in d1">
+            Não é uma dieta.<br>
+            É um protocolo construído<br>
+            ao redor da sua <em>vida.</em>
+          </h2>
+          <p class="metodo-sub fade-in d2">
+            Quatro pilares que sustentam resultados reais —
+            sem atalhos e sem extremismos.
+          </p>
+        </header>
+
+        <div class="metodo-grid" role="list">
+
+          <article class="pilar fade-in" role="listitem">
+            <div class="pilar-num" aria-hidden="true">01</div>
+            <h3 class="pilar-title">Diagnóstico individualizado</h3>
+            <p class="pilar-desc">
+              Anamnese completa, análise de exames laboratoriais e avaliação
+              antropométrica detalhada. Nenhum protocolo começa sem entender quem
+              você é de verdade.
+            </p>
+          </article>
+
+          <article class="pilar fade-in d1" role="listitem">
+            <div class="pilar-num" aria-hidden="true">02</div>
+            <h3 class="pilar-title">Plano construído com você</h3>
+            <p class="pilar-desc">
+              O plano alimentar não é imposto — é cocriado na consulta. Leva em conta
+              sua rotina, preferências, agenda e os prazeres que você não quer abrir
+              mão.
+            </p>
+          </article>
+
+          <article class="pilar fade-in d2" role="listitem">
+            <div class="pilar-num" aria-hidden="true">03</div>
+            <h3 class="pilar-title">Sem restrições descabidas</h3>
+            <p class="pilar-desc">
+              Baseado em evidências científicas, não em modismos. Vinho, restaurante,
+              viagem — tudo tem lugar num protocolo bem construído. Ciência, não
+              sacrifício.
+            </p>
+          </article>
+
+          <article class="pilar fade-in d3" role="listitem">
+            <div class="pilar-num" aria-hidden="true">04</div>
+            <h3 class="pilar-title">Suporte contínuo</h3>
+            <p class="pilar-desc">
+              Acesso direto ao profissional entre consultas. Dúvidas respondidas,
+              ajustes feitos, evolução acompanhada. Você nunca está sozinha no
+              processo.
+            </p>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+
+    <!-- SOBRE -->
+    <section class="sobre" id="sobre" aria-label="Sobre Vinícius A. Santos">
+      <div class="container">
+
+        <div class="sobre-photo fade-in">
+          <div class="sobre-photo-wrap">
+            <div class="photo-frame">
+              <img src="images/E-ai-Qual-a-sua-pose-favoritaVou-superar-esse-cara-aí_-__.webp" alt="Vinícius A. Santos — nutricionista especializado em emagrecimento" loading="lazy">
+            </div>
+            <div class="sobre-photo-caption" role="list" aria-label="Credenciais profissionais">
+              <div class="photo-cred-item" role="listitem">
+                <div class="cred-label">CRN</div>
+                <div class="cred-value">82545</div>
+              </div>
+              <div class="photo-cred-item" role="listitem">
+                <div class="cred-label">Formação</div>
+                <div class="cred-value">Universidade Federal de Minas Gerais</div>
+              </div>
+              <div class="photo-cred-item" role="listitem">
+                <div class="cred-label">Especialização</div>
+                <div class="cred-value">Nutrição Clínica e Esportiva</div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="sobre-content">
+          <span class="label fade-in">Sobre o profissional</span>
+
+          <h2 class="sobre-headline fade-in d1">
+            Nenhum plano<br>
+            funciona se não <em>couber</em><br>
+            na sua vida.
+          </h2>
+
+          <p class="sobre-text fade-in d2">
+            Vinícius A. Santos é nutricionista especializado em emagrecimento e estética
+            com foco em abordagem individualizada. Atende presencialmente e online, com
+            uma filosofia simples: resultado sustentável começa pelo respeito à sua
+            identidade.
+          </p>
+
+          <p class="sobre-text fade-in d2">
+            Com o Método VAS, cada paciente tem um protocolo único — construído a partir
+            da sua rotina, seus objetivos e seus exames. Sem atalhos, sem extremismos,
+            sem abrir mão do que você construiu na vida.
+          </p>
+
+          <div class="sobre-cta fade-in d3">
+            <a href="#" class="btn-primary" id="sobre-cta" aria-label="Agendar consulta com Vinícius via WhatsApp">
+              <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z" />
+              </svg>
+              Agendar minha consulta
+            </a>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+
+    <!-- DEPOIMENTOS -->
+    <section class="depoimentos" id="depoimentos" aria-label="Depoimentos de pacientes">
+      <div class="container">
+
+        <header class="depoimentos-header">
+          <span class="label fade-in">Resultados reais</span>
+          <h2 class="depo-headline fade-in d1">
+            Pessoas que<br>
+            encontraram o <em>caminho.</em>
+          </h2>
+        </header>
+
+        <div class="depo-carousel" aria-label="Depoimentos de pacientes">
+          <div class="depo-track" id="depoTrack">
+
+            <!-- GRUPO 1 -->
+            <div class="depo-slide">
+              <!-- CLIENTE: Substituir depoimentos pelos reais -->
+              <article class="depo-card" role="listitem">
+                <div class="depo-stars" aria-label="5 estrelas">★★★★★</div>
+                <blockquote class="depo-quote">"Tentei tantas coisas antes. Com o Vinícius foi diferente — ele realmente entendeu a minha rotina e construiu algo que eu consegui manter. Sem drama, sem culpa, com resultado."</blockquote>
+                <div class="depo-author">
+                  <div class="author-avatar"><img src="" alt="Ana Carolina" loading="lazy"></div>
+                  <div>
+                    <div class="author-name">Ana Carolina, 42 anos</div>
+                    <div class="author-result">Resultado: −11 kg em 4 meses</div>
+                  </div>
+                </div>
+              </article>
+              <article class="depo-card" role="listitem">
+                <div class="depo-stars" aria-label="5 estrelas">★★★★★</div>
+                <blockquote class="depo-quote">"Pela primeira vez na vida segui um plano alimentar que não me fez sentir culpa. Janto fora, viajo, bebo meu vinho no fim de semana — e continuo evoluindo."</blockquote>
+                <div class="depo-author">
+                  <div class="author-avatar"><img src="" alt="Mariana" loading="lazy"></div>
+                  <div>
+                    <div class="author-name">Mariana, 38 anos</div>
+                    <div class="author-result">Resultado: −8 kg em 3 meses</div>
+                  </div>
+                </div>
+              </article>
+              <article class="depo-card" role="listitem">
+                <div class="depo-stars" aria-label="5 estrelas">★★★★★</div>
+                <blockquote class="depo-quote">"Agenda cheia, filhos, trabalho — o Vinícius entendeu que minha vida não para. Criamos juntos um plano que cabe na minha realidade."</blockquote>
+                <div class="depo-author">
+                  <div class="author-avatar"><img src="" alt="Patrícia" loading="lazy"></div>
+                  <div>
+                    <div class="author-name">Patrícia, 47 anos</div>
+                    <div class="author-result">Resultado: −14 kg em 5 meses</div>
+                  </div>
+                </div>
+              </article>
+            </div>
+
+            <!-- GRUPO 2 -->
+            <div class="depo-slide">
+              <article class="depo-card" role="listitem">
+                <div class="depo-stars" aria-label="5 estrelas">★★★★★</div>
+                <blockquote class="depo-quote">"Nunca achei que conseguiria emagrecer sem abrir mão do restaurante com as amigas. O protocolo do Vinícius me mostrou que é possível ter resultado respeitando minha vida social."</blockquote>
+                <div class="depo-author">
+                  <div class="author-avatar"><img src="" alt="Fernanda" loading="lazy"></div>
+                  <div>
+                    <div class="author-name">Fernanda, 44 anos</div>
+                    <div class="author-result">Resultado: −9 kg em 3 meses</div>
+                  </div>
+                </div>
+              </article>
+              <article class="depo-card" role="listitem">
+                <div class="depo-stars" aria-label="5 estrelas">★★★★★</div>
+                <blockquote class="depo-quote">"O que me surpreendeu foi a personalização. Não recebi uma lista genérica — foi um plano construído para mim, com os meus exames, a minha rotina, os meus objetivos."</blockquote>
+                <div class="depo-author">
+                  <div class="author-avatar"><img src="" alt="Cláudia" loading="lazy"></div>
+                  <div>
+                    <div class="author-name">Cláudia, 51 anos</div>
+                    <div class="author-result">Resultado: −7 kg em 2 meses</div>
+                  </div>
+                </div>
+              </article>
+              <article class="depo-card" role="listitem">
+                <div class="depo-stars" aria-label="5 estrelas">★★★★★</div>
+                <blockquote class="depo-quote">"Estava cética depois de tantas tentativas frustradas. Mas o Método VAS é diferente porque parte da minha realidade, não de uma fórmula pronta. Resultado sustentável de verdade."</blockquote>
+                <div class="depo-author">
+                  <div class="author-avatar"><img src="" alt="Renata" loading="lazy"></div>
+                  <div>
+                    <div class="author-name">Renata, 39 anos</div>
+                    <div class="author-result">Resultado: −10 kg em 4 meses</div>
+                  </div>
+                </div>
+              </article>
+            </div>
+
+            <!-- GRUPO 3 -->
+            <div class="depo-slide">
+              <article class="depo-card" role="listitem">
+                <div class="depo-stars" aria-label="5 estrelas">★★★★★</div>
+                <blockquote class="depo-quote">"Perdi peso sem perceber que estava 'fazendo dieta'. O plano se encaixou tão bem na minha rotina que virou estilo de vida. Isso é o que o Vinícius faz de diferente."</blockquote>
+                <div class="depo-author">
+                  <div class="author-avatar"><img src="" alt="Juliana" loading="lazy"></div>
+                  <div>
+                    <div class="author-name">Juliana, 36 anos</div>
+                    <div class="author-result">Resultado: −6 kg em 2 meses</div>
+                  </div>
+                </div>
+              </article>
+              <article class="depo-card" role="listitem">
+                <div class="depo-stars" aria-label="5 estrelas">★★★★★</div>
+                <blockquote class="depo-quote">"Finalmente entendi o que meu corpo precisa. O suporte direto com o Vinícius entre as consultas fez toda a diferença — nunca me senti abandonada no processo."</blockquote>
+                <div class="depo-author">
+                  <div class="author-avatar"><img src="" alt="Beatriz" loading="lazy"></div>
+                  <div>
+                    <div class="author-name">Beatriz, 45 anos</div>
+                    <div class="author-result">Resultado: −12 kg em 5 meses</div>
+                  </div>
+                </div>
+              </article>
+              <article class="depo-card" role="listitem">
+                <div class="depo-stars" aria-label="5 estrelas">★★★★★</div>
+                <blockquote class="depo-quote">"Minha relação com a comida mudou completamente. Sem culpa, sem extremismo. Aprendi a comer bem sem abrir mão de nada que realmente importa pra mim."</blockquote>
+                <div class="depo-author">
+                  <div class="author-avatar"><img src="" alt="Camila" loading="lazy"></div>
+                  <div>
+                    <div class="author-name">Camila, 40 anos</div>
+                    <div class="author-result">Resultado: −8 kg em 3 meses</div>
+                  </div>
+                </div>
+              </article>
+            </div>
+
+          </div>
+
+        </div>
+
+        <div class="depo-dots" role="tablist" aria-label="Navegar entre grupos de depoimentos">
+          <button class="depo-dot active" role="tab" aria-selected="true" aria-label="Grupo 1" data-index="0"></button>
+          <button class="depo-dot" role="tab" aria-selected="false" aria-label="Grupo 2" data-index="1"></button>
+          <button class="depo-dot" role="tab" aria-selected="false" aria-label="Grupo 3" data-index="2"></button>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- RESULTADOS -->
+    <section class="resultados" id="resultados" aria-label="Resultados antes e depois">
+
+      <div class="container">
+        <header class="resultados-header">
+          <span class="label fade-in">Transformações reais</span>
+          <h2 class="resultados-headline fade-in d1">
+            Antes e depois<br>
+            <em>resultados</em> que falam por si.
+          </h2>
+        </header>
+      </div>
+
+      <div class="videos-track-wrapper" role="region" aria-label="Carrossel de transformações">
+        <div class="videos-track" id="videosTrack">
+
+          <!-- ORIGINAIS -->
+          <!-- CLIENTE: Substituir as imagens abaixo pelas fotos reais de antes e depois de cada paciente -->
+
+          <div class="video-card" aria-label="Transformação: menos 12 kg em 4 meses">
+            <div class="result-img-wrapper">
+              <div class="result-img-col">
+                <span class="result-img-label">Antes</span>
+                <!-- CLIENTE: Inserir foto de antes da paciente Ana Carolina -->
+                <img src="" alt="Antes — Ana Carolina" loading="lazy" class="result-img">
+              </div>
+              <div class="result-img-divider"></div>
+              <div class="result-img-col">
+                <span class="result-img-label">Depois</span>
+                <!-- CLIENTE: Inserir foto de depois da paciente Ana Carolina -->
+                <img src="" alt="Depois — Ana Carolina" loading="lazy" class="result-img">
+              </div>
+            </div>
+            <div class="video-caption">
+              <div class="result-avatar">
+                <img src="" alt="Ana Carolina" loading="lazy">
+                <!-- CLIENTE: Inserir foto da paciente Ana Carolina -->
+              </div>
+              <div class="video-caption-text">
+                <div class="video-caption-name">Ana Carolina, 42 anos</div>
+                <div class="video-caption-sub">Empresária · 4 meses</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="video-card" aria-label="Transformação: menos 8 kg em 3 meses">
+            <div class="result-img-wrapper">
+              <div class="result-img-col">
+                <span class="result-img-label">Antes</span>
+                <!-- CLIENTE: Inserir foto de antes da paciente Mariana -->
+                <img src="" alt="Antes — Mariana" loading="lazy" class="result-img">
+              </div>
+              <div class="result-img-divider"></div>
+              <div class="result-img-col">
+                <span class="result-img-label">Depois</span>
+                <!-- CLIENTE: Inserir foto de depois da paciente Mariana -->
+                <img src="" alt="Depois — Mariana" loading="lazy" class="result-img">
+              </div>
+            </div>
+            <div class="video-caption">
+              <div class="result-avatar">
+                <img src="" alt="Mariana" loading="lazy">
+                <!-- CLIENTE: Inserir foto da paciente Mariana -->
+              </div>
+              <div class="video-caption-text">
+                <div class="video-caption-name">Mariana, 38 anos</div>
+                <div class="video-caption-sub">Advogada · 3 meses</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="video-card" aria-label="Transformação: menos 15 kg em 5 meses">
+            <div class="result-img-wrapper">
+              <div class="result-img-col">
+                <span class="result-img-label">Antes</span>
+                <!-- CLIENTE: Inserir foto de antes da paciente Patrícia -->
+                <img src="" alt="Antes — Patrícia" loading="lazy" class="result-img">
+              </div>
+              <div class="result-img-divider"></div>
+              <div class="result-img-col">
+                <span class="result-img-label">Depois</span>
+                <!-- CLIENTE: Inserir foto de depois da paciente Patrícia -->
+                <img src="" alt="Depois — Patrícia" loading="lazy" class="result-img">
+              </div>
+            </div>
+            <div class="video-caption">
+              <div class="result-avatar">
+                <img src="" alt="Patrícia" loading="lazy">
+                <!-- CLIENTE: Inserir foto da paciente Patrícia -->
+              </div>
+              <div class="video-caption-text">
+                <div class="video-caption-name">Patrícia, 47 anos</div>
+                <div class="video-caption-sub">Médica · 5 meses</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="video-card" aria-label="Transformação: menos 10 kg em 4 meses">
+            <div class="result-img-wrapper">
+              <div class="result-img-col">
+                <span class="result-img-label">Antes</span>
+                <!-- CLIENTE: Inserir foto de antes da paciente Juliana -->
+                <img src="" alt="Antes — Juliana" loading="lazy" class="result-img">
+              </div>
+              <div class="result-img-divider"></div>
+              <div class="result-img-col">
+                <span class="result-img-label">Depois</span>
+                <!-- CLIENTE: Inserir foto de depois da paciente Juliana -->
+                <img src="" alt="Depois — Juliana" loading="lazy" class="result-img">
+              </div>
+            </div>
+            <div class="video-caption">
+              <div class="result-avatar">
+                <img src="" alt="Juliana" loading="lazy">
+                <!-- CLIENTE: Inserir foto da paciente Juliana -->
+              </div>
+              <div class="video-caption-text">
+                <div class="video-caption-name">Juliana, 36 anos</div>
+                <div class="video-caption-sub">Professora · 4 meses</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="video-card" aria-label="Transformação: menos 6 kg em 2 meses">
+            <div class="result-img-wrapper">
+              <div class="result-img-col">
+                <span class="result-img-label">Antes</span>
+                <!-- CLIENTE: Inserir foto de antes da paciente Fernanda -->
+                <img src="" alt="Antes — Fernanda" loading="lazy" class="result-img">
+              </div>
+              <div class="result-img-divider"></div>
+              <div class="result-img-col">
+                <span class="result-img-label">Depois</span>
+                <!-- CLIENTE: Inserir foto de depois da paciente Fernanda -->
+                <img src="" alt="Depois — Fernanda" loading="lazy" class="result-img">
+              </div>
+            </div>
+            <div class="video-caption">
+              <div class="result-avatar">
+                <img src="" alt="Fernanda" loading="lazy">
+                <!-- CLIENTE: Inserir foto da paciente Fernanda -->
+              </div>
+              <div class="video-caption-text">
+                <div class="video-caption-name">Fernanda, 44 anos</div>
+                <div class="video-caption-sub">Executiva · 2 meses</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="video-card" aria-label="Transformação: menos 18 kg em 6 meses">
+            <div class="result-img-wrapper">
+              <div class="result-img-col">
+                <span class="result-img-label">Antes</span>
+                <!-- CLIENTE: Inserir foto de antes da paciente Camila -->
+                <img src="" alt="Antes — Camila" loading="lazy" class="result-img">
+              </div>
+              <div class="result-img-divider"></div>
+              <div class="result-img-col">
+                <span class="result-img-label">Depois</span>
+                <!-- CLIENTE: Inserir foto de depois da paciente Camila -->
+                <img src="" alt="Depois — Camila" loading="lazy" class="result-img">
+              </div>
+            </div>
+            <div class="video-caption">
+              <div class="result-avatar">
+                <img src="" alt="Camila" loading="lazy">
+                <!-- CLIENTE: Inserir foto da paciente Camila -->
+              </div>
+              <div class="video-caption-text">
+                <div class="video-caption-name">Camila, 40 anos</div>
+                <div class="video-caption-sub">Designer · 6 meses</div>
+              </div>
+            </div>
+          </div>
+
+          <!-- DUPLICATAS para loop infinito (aria-hidden) -->
+          <div class="video-card video-card-clone" aria-hidden="true">
+            <div class="result-img-wrapper">
+              <div class="result-img-col"><span class="result-img-label">Antes</span><img src="" alt="Antes — Ana Carolina" loading="lazy" class="result-img"></div>
+              <div class="result-img-divider"></div>
+              <div class="result-img-col"><span class="result-img-label">Depois</span><img src="" alt="Depois — Ana Carolina" loading="lazy" class="result-img"></div>
+            </div>
+            <div class="video-caption">
+              <div class="result-avatar"><img src="" alt="Ana Carolina" loading="lazy"></div>
+              <div class="video-caption-text">
+                <div class="video-caption-name">Ana Carolina, 42 anos</div>
+                <div class="video-caption-sub">Empresária · 4 meses</div>
+              </div>
+            </div>
+          </div>
+          <div class="video-card video-card-clone" aria-hidden="true">
+            <div class="result-img-wrapper">
+              <div class="result-img-col"><span class="result-img-label">Antes</span><img src="" alt="Antes — Mariana" loading="lazy" class="result-img"></div>
+              <div class="result-img-divider"></div>
+              <div class="result-img-col"><span class="result-img-label">Depois</span><img src="" alt="Depois — Mariana" loading="lazy" class="result-img"></div>
+            </div>
+            <div class="video-caption">
+              <div class="result-avatar"><img src="" alt="Mariana" loading="lazy"></div>
+              <div class="video-caption-text">
+                <div class="video-caption-name">Mariana, 38 anos</div>
+                <div class="video-caption-sub">Advogada · 3 meses</div>
+              </div>
+            </div>
+          </div>
+          <div class="video-card video-card-clone" aria-hidden="true">
+            <div class="result-img-wrapper">
+              <div class="result-img-col"><span class="result-img-label">Antes</span><img src="" alt="Antes — Patrícia" loading="lazy" class="result-img"></div>
+              <div class="result-img-divider"></div>
+              <div class="result-img-col"><span class="result-img-label">Depois</span><img src="" alt="Depois — Patrícia" loading="lazy" class="result-img"></div>
+            </div>
+            <div class="video-caption">
+              <div class="result-avatar"><img src="" alt="Patrícia" loading="lazy"></div>
+              <div class="video-caption-text">
+                <div class="video-caption-name">Patrícia, 47 anos</div>
+                <div class="video-caption-sub">Médica · 5 meses</div>
+              </div>
+            </div>
+          </div>
+          <div class="video-card video-card-clone" aria-hidden="true">
+            <div class="result-img-wrapper">
+              <div class="result-img-col"><span class="result-img-label">Antes</span><img src="" alt="Antes — Juliana" loading="lazy" class="result-img"></div>
+              <div class="result-img-divider"></div>
+              <div class="result-img-col"><span class="result-img-label">Depois</span><img src="" alt="Depois — Juliana" loading="lazy" class="result-img"></div>
+            </div>
+            <div class="video-caption">
+              <div class="result-avatar"><img src="" alt="Juliana" loading="lazy"></div>
+              <div class="video-caption-text">
+                <div class="video-caption-name">Juliana, 36 anos</div>
+                <div class="video-caption-sub">Professora · 4 meses</div>
+              </div>
+            </div>
+          </div>
+          <div class="video-card video-card-clone" aria-hidden="true">
+            <div class="result-img-wrapper">
+              <div class="result-img-col"><span class="result-img-label">Antes</span><img src="" alt="Antes — Fernanda" loading="lazy" class="result-img"></div>
+              <div class="result-img-divider"></div>
+              <div class="result-img-col"><span class="result-img-label">Depois</span><img src="" alt="Depois — Fernanda" loading="lazy" class="result-img"></div>
+            </div>
+            <div class="video-caption">
+              <div class="result-avatar"><img src="" alt="Fernanda" loading="lazy"></div>
+              <div class="video-caption-text">
+                <div class="video-caption-name">Fernanda, 44 anos</div>
+                <div class="video-caption-sub">Executiva · 2 meses</div>
+              </div>
+            </div>
+          </div>
+          <div class="video-card video-card-clone" aria-hidden="true">
+            <div class="result-img-wrapper">
+              <div class="result-img-col"><span class="result-img-label">Antes</span><img src="" alt="Antes — Camila" loading="lazy" class="result-img"></div>
+              <div class="result-img-divider"></div>
+              <div class="result-img-col"><span class="result-img-label">Depois</span><img src="" alt="Depois — Camila" loading="lazy" class="result-img"></div>
+            </div>
+            <div class="video-caption">
+              <div class="result-avatar"><img src="" alt="Camila" loading="lazy"></div>
+              <div class="video-caption-text">
+                <div class="video-caption-name">Camila, 40 anos</div>
+                <div class="video-caption-sub">Designer · 6 meses</div>
+              </div>
+            </div>
+          </div>
+
+        </div><!-- /videos-track -->
+      </div><!-- /videos-track-wrapper -->
+
+    </section>
+
+
+    <!-- COMO FUNCIONA -->
+    <section class="como" id="como-funciona" aria-label="Como funciona o processo">
+      <div class="container">
+
+        <header class="como-header">
+          <span class="label fade-in">O processo</span>
+          <h2 class="como-headline fade-in d1">
+            Simples de começar.<br>
+            <em>Transformador</em> de viver.
+          </h2>
+        </header>
+
+        <div class="steps" role="list">
+
+          <div class="step fade-in" role="listitem">
+            <div class="step-num" aria-hidden="true">01</div>
+            <h3 class="step-title">Agende sua consulta</h3>
+            <p class="step-desc">
+              Pelo WhatsApp, em menos de dois minutos. Sem formulários complexos,
+              sem espera.
+            </p>
+          </div>
+
+          <div class="step fade-in d1" role="listitem">
+            <div class="step-num" aria-hidden="true">02</div>
+            <h3 class="step-title">Primeira consulta</h3>
+            <p class="step-desc">
+              Anamnese completa, análise de exames e construção do seu plano
+              personalizado — juntos, na consulta.
+            </p>
+          </div>
+
+          <div class="step fade-in d2" role="listitem">
+            <div class="step-num" aria-hidden="true">03</div>
+            <h3 class="step-title">Acompanhamento contínuo</h3>
+            <p class="step-desc">
+              Suporte direto, ajustes precisos e evolução constante. Você nunca
+              está sozinha no processo.
+            </p>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+
+    <!-- CLÍNICAS -->
+    <section class="clinicas" id="clinicas" aria-label="Localização das clínicas">
+      <div class="container">
+
+        <div class="clinicas-header fade-in">
+          <span class="label">Onde nos encontrar</span>
+          <div class="gold-bar" aria-hidden="true"></div>
+          <h2 class="clinicas-headline">
+            Duas unidades,<br>
+            o mesmo <em>cuidado.</em>
+          </h2>
+          <p class="clinicas-sub">
+            Atendimento presencial nas zonas sul de São Paulo.<br>
+            Clique no mapa para se orientar.
+          </p>
+        </div>
+
+        <div class="clinicas-grid">
+
+          <!-- Clínica 1 -->
+          <article class="clinica-card fade-in d1">
+            <a href="https://maps.google.com/?q=Av.+Leblon,+510,+Jardim+dos+Lagos,+São+Paulo,+SP,+04771-050"
+               target="_blank" rel="noopener noreferrer"
+               class="clinica-map-link"
+               aria-label="Ver Clínica Jardim dos Lagos no Google Maps">
+              <div class="clinica-map-wrapper">
+                <iframe
+                  src="https://www.google.com/maps?q=Av.+Leblon,+510,+Jardim+dos+Lagos,+São+Paulo,+SP,+04771-050&output=embed"
+                  loading="lazy"
+                  referrerpolicy="no-referrer-when-downgrade"
+                  title="Mapa — Clínica Jardim dos Lagos">
+                </iframe>
+                <div class="clinica-map-overlay" aria-hidden="true">
+                  <span class="clinica-map-badge">Ver no Maps →</span>
+                </div>
+              </div>
+            </a>
+            <div class="clinica-info">
+              <div class="clinica-num">01</div>
+              <div class="clinica-details">
+                <h3 class="clinica-name">Jardim dos Lagos</h3>
+                <address class="clinica-address">
+                  Av. Leblon, 510<br>
+                  Jardim dos Lagos · CEP 04771-050
+                </address>
+              </div>
+              <a href="https://maps.google.com/?q=Av.+Leblon,+510,+Jardim+dos+Lagos,+São+Paulo,+SP,+04771-050"
+                 target="_blank" rel="noopener noreferrer"
+                 class="clinica-btn"
+                 aria-label="Como chegar à Clínica Jardim dos Lagos">
+                Como chegar →
+              </a>
+            </div>
+          </article>
+
+          <!-- Clínica 2 -->
+          <article class="clinica-card fade-in d2">
+            <a href="https://maps.google.com/?q=Rua+Arizona,+708,+Cidade+Monções,+São+Paulo,+SP,+04567-002"
+               target="_blank" rel="noopener noreferrer"
+               class="clinica-map-link"
+               aria-label="Ver Clínica Cidade Monções no Google Maps">
+              <div class="clinica-map-wrapper">
+                <iframe
+                  src="https://www.google.com/maps?q=Rua+Arizona,+708,+Cidade+Monções,+São+Paulo,+SP,+04567-002&output=embed"
+                  loading="lazy"
+                  referrerpolicy="no-referrer-when-downgrade"
+                  title="Mapa — Clínica Cidade Monções">
+                </iframe>
+                <div class="clinica-map-overlay" aria-hidden="true">
+                  <span class="clinica-map-badge">Ver no Maps →</span>
+                </div>
+              </div>
+            </a>
+            <div class="clinica-info">
+              <div class="clinica-num">02</div>
+              <div class="clinica-details">
+                <h3 class="clinica-name">Cidade Monções</h3>
+                <address class="clinica-address">
+                  Rua Arizona, 708<br>
+                  Cidade Monções · CEP 04567-002
+                </address>
+              </div>
+              <a href="https://maps.google.com/?q=Rua+Arizona,+708,+Cidade+Monções,+São+Paulo,+SP,+04567-002"
+                 target="_blank" rel="noopener noreferrer"
+                 class="clinica-btn"
+                 aria-label="Como chegar à Clínica Cidade Monções">
+                Como chegar →
+              </a>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+
+    <!-- CTA FINAL -->
+    <section class="cta-final" id="agendar" aria-label="Agendar consulta">
+      <div class="container">
+        <div class="cta-final-inner">
+
+          <div class="cta-final-content">
+            <span class="label fade-in">Vagas limitadas</span>
+
+            <h2 class="cta-headline fade-in d1">
+              Sua transformação<br>
+              começa com uma <em>conversa.</em>
+            </h2>
+
+            <p class="cta-sub fade-in d2">
+              Vagas limitadas para atendimento presencial e online.
+            </p>
+
+            <div class="fade-in d3">
+              <a href="#" class="btn-ghost" id="cta-final-btn" aria-label="Quero agendar minha consulta via WhatsApp">
+                <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                  <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z" />
+                </svg>
+                Quero agendar minha consulta
+              </a>
+
+              <div class="cta-socials" aria-label="Redes sociais">
+                <!-- CLIENTE: Inserir link do WhatsApp real -->
+                <a href="#" class="cta-social" id="cta-wa-social" aria-label="WhatsApp de Vinícius A. Santos">
+                  <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                    <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z" />
+                  </svg>
+                  WhatsApp
+                </a>
+                <!-- CLIENTE: Inserir link real do Instagram -->
+                <a href="https://instagram.com/vas.nutri" class="cta-social" target="_blank" rel="noopener noreferrer" aria-label="Instagram @vas.nutri">
+                  <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                    <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z" />
+                  </svg>
+                  @vas.nutri
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div class="cta-deco fade-in d2">
+            <div class="cta-stat">
+              <div class="cta-stat-num">+200</div>
+              <div class="cta-stat-label">pacientes atendidas</div>
+            </div>
+            <div class="cta-stat-divider" aria-hidden="true"></div>
+            <div class="cta-stat">
+              <div class="cta-stat-num">93%</div>
+              <div class="cta-stat-label">mantêm o resultado após 1 ano</div>
+            </div>
+            <div class="cta-stat-divider" aria-hidden="true"></div>
+            <div class="cta-stat">
+              <div class="cta-stat-num">5★</div>
+              <div class="cta-stat-label">avaliação média das pacientes</div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+
+  <!-- FOOTER -->
+  <footer class="footer" role="contentinfo">
+    <div class="container">
+
+      <div class="footer-main">
+        <div class="footer-brand">
+          <div class="footer-brand-name">Vinícius A. Santos</div>
+          <div class="footer-brand-role">Nutricionista</div>
+          <!-- CLIENTE: Confirmar CRN -->
+          <div class="footer-crn">CRN 82545</div>
+        </div>
+
+        <nav class="footer-links" aria-label="Links de contato">
+          <!-- CLIENTE: Inserir link do Instagram real -->
+          <a href="https://instagram.com/vas.nutri" class="footer-link" target="_blank" rel="noopener noreferrer" aria-label="Instagram @vas.nutri">
+            <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+              <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z" />
+            </svg>
+            @vas.nutri
+          </a>
+          <!-- CLIENTE: Inserir número do WhatsApp real -->
+          <a href="#" class="footer-link" id="footer-wa" aria-label="WhatsApp de Vinícius A. Santos">
+            <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+              <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z" />
+            </svg>
+            WhatsApp
+          </a>
+        </nav>
+      </div>
+
+      <p class="footer-copy">
+        &copy; 2026 Vinícius A. Santos. Todos os direitos reservados.
+      </p>
+
+    </div>
+  </footer>
+
+
+  <script>
+    /* =========================================
+       DEPOIMENTOS CARROSSEL
+    ========================================= */
+    (function () {
+      var carousel = document.querySelector('.depo-carousel');
+      var track    = document.getElementById('depoTrack');
+      var dotsWrap = document.querySelector('.depo-dots');
+      if (!track || !carousel || !dotsWrap) return;
+
+      var current = 0;
+      var timer;
+      var scrollTimer;
+
+      function mobile() { return window.innerWidth <= 768; }
+      function getItems() {
+        return mobile()
+          ? Array.from(track.querySelectorAll('.depo-card'))
+          : Array.from(track.querySelectorAll('.depo-slide'));
+      }
+
+      function setActiveDot(index) {
+        dotsWrap.querySelectorAll('.depo-dot').forEach(function (d, i) {
+          var on = i === index;
+          d.classList.toggle('active', on);
+          d.setAttribute('aria-selected', on ? 'true' : 'false');
+        });
+      }
+
+      function goTo(index) {
+        var items = getItems();
+        var total = items.length;
+        current = (index + total) % total;
+        var target = items[current];
+        if (!target) return;
+
+        if (mobile()) {
+          // scroll nativo — o CSS scroll-snap cuida do alinhamento
+          carousel.scrollTo({ left: target.offsetLeft - carousel.offsetLeft, behavior: 'smooth' });
+        } else {
+          // transform no desktop
+          track.style.transform = 'translateX(-' + (current * 100) + '%)';
+        }
+        setActiveDot(current);
+      }
+
+      function buildDots() {
+        var items = getItems();
+        dotsWrap.innerHTML = '';
+        items.forEach(function (_, i) {
+          var btn = document.createElement('button');
+          btn.className = 'depo-dot' + (i === 0 ? ' active' : '');
+          btn.setAttribute('role', 'tab');
+          btn.setAttribute('aria-selected', i === 0 ? 'true' : 'false');
+          btn.setAttribute('aria-label', (mobile() ? 'Depoimento ' : 'Grupo ') + (i + 1));
+          btn.setAttribute('data-index', String(i));
+          btn.addEventListener('click', function () {
+            goTo(parseInt(this.getAttribute('data-index')));
+            resetTimer();
+          });
+          dotsWrap.appendChild(btn);
+        });
+      }
+
+      // Atualiza dot quando o usuário arrasta no mobile
+      carousel.addEventListener('scroll', function () {
+        if (!mobile()) return;
+        clearTimeout(scrollTimer);
+        scrollTimer = setTimeout(function () {
+          var items = getItems();
+          var mid = carousel.scrollLeft + carousel.offsetWidth / 2;
+          var closest = 0, minDist = Infinity;
+          items.forEach(function (el, i) {
+            var elMid = el.offsetLeft - carousel.offsetLeft + el.offsetWidth / 2;
+            var dist = Math.abs(mid - elMid);
+            if (dist < minDist) { minDist = dist; closest = i; }
+          });
+          if (closest !== current) { current = closest; setActiveDot(current); }
+        }, 80);
+      }, { passive: true });
+
+      function next() { goTo(current + 1); }
+      function startTimer() { timer = setInterval(next, 7000); }
+      function resetTimer() { clearInterval(timer); startTimer(); }
+
+      var resizeTimer;
+      window.addEventListener('resize', function () {
+        clearTimeout(resizeTimer);
+        resizeTimer = setTimeout(function () {
+          buildDots();
+          current = 0;
+          goTo(0);
+        }, 150);
+      });
+
+      buildDots();
+      goTo(0);
+      startTimer();
+    })();
+
+    /* =========================================
+       WHATSAPP CONFIG
+       CLIENTE: Substituir pelo número real no formato 55DDD9XXXXXXXX
+    ========================================= */
+    const WHATSAPP_NUMBER = "55XXXXXXXXXXX";
+    const WHATSAPP_MESSAGE = encodeURIComponent(
+      "Olá, Vinícius! Vim pelo site e gostaria de agendar minha consulta."
+    );
+    const WHATSAPP_URL = `https://wa.me/${WHATSAPP_NUMBER}?text=${WHATSAPP_MESSAGE}`;
+
+    function applyWhatsAppLinks() {
+      const ids = ["nav-cta", "nav-drawer-cta", "hero-cta", "sobre-cta", "cta-final-btn", "cta-wa-social", "footer-wa"];
+      ids.forEach(function (id) {
+        var el = document.getElementById(id);
+        if (el) el.href = WHATSAPP_URL;
+      });
+    }
+    applyWhatsAppLinks();
+
+    /* =========================================
+       NAV — scroll state
+    ========================================= */
+    (function () {
+      var nav = document.getElementById("nav");
+      function onScroll() {
+        if (window.scrollY > 40) { nav.classList.add("scrolled"); }
+        else { nav.classList.remove("scrolled"); }
+      }
+      window.addEventListener("scroll", onScroll, { passive: true });
+      onScroll();
+    })();
+
+    /* =========================================
+       NAV — mobile drawer
+    ========================================= */
+    (function () {
+      var toggle = document.getElementById("nav-toggle");
+      var drawer = document.getElementById("nav-drawer");
+      var links = drawer.querySelectorAll("a");
+
+      function close() {
+        toggle.classList.remove("open");
+        drawer.classList.remove("open");
+        toggle.setAttribute("aria-expanded", "false");
+        toggle.setAttribute("aria-label", "Abrir menu");
+      }
+
+      toggle.addEventListener("click", function () {
+        var isOpen = drawer.classList.contains("open");
+        if (isOpen) { close(); }
+        else {
+          toggle.classList.add("open");
+          drawer.classList.add("open");
+          toggle.setAttribute("aria-expanded", "true");
+          toggle.setAttribute("aria-label", "Fechar menu");
+        }
+      });
+
+      links.forEach(function (link) { link.addEventListener("click", close); });
+
+      document.addEventListener("click", function (e) {
+        if (!drawer.contains(e.target) && !toggle.contains(e.target)) { close(); }
+      });
+    })();
+
+    /* =========================================
+       INTERSECTION OBSERVER — fade-in
+    ========================================= */
+    (function () {
+      var prefersReduced = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+      if (prefersReduced) {
+        document.querySelectorAll(".fade-in").forEach(function (el) { el.classList.add("visible"); });
+        return;
+      }
+
+      var observer = new IntersectionObserver(function (entries) {
+        entries.forEach(function (entry) {
+          if (entry.isIntersecting) {
+            entry.target.classList.add("visible");
+            observer.unobserve(entry.target);
+          }
+        });
+      }, { threshold: 0.08, rootMargin: "0px 0px -48px 0px" });
+
+      document.querySelectorAll(".fade-in").forEach(function (el) {
+        observer.observe(el);
+      });
+    })();
+
+    /* =========================================
+       SMOOTH ANCHOR SCROLL
+    ========================================= */
+    document.querySelectorAll('a[href^="#"]').forEach(function (anchor) {
+      anchor.addEventListener("click", function (e) {
+        var href = anchor.getAttribute("href");
+        if (href === "#" || href === "#inicio") return;
+        var target = document.querySelector(href);
+        if (!target) return;
+        e.preventDefault();
+        var top = target.getBoundingClientRect().top + window.scrollY - 72;
+        window.scrollTo({ top: top, behavior: "smooth" });
+      });
+    });
+  </script>
+
+</body>
+
+</html>

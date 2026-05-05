@@ -410,7 +410,7 @@ button { font-family: var(--font-body); cursor: pointer; border: none; backgroun
   .hero-photo {
     position: relative;
     width: 100%;
-    flex: 2 1 0;
+    flex: 4 1 0;
     min-height: 0;
     margin-top: 0;
     top: auto; right: auto; bottom: auto;
@@ -434,13 +434,13 @@ button { font-family: var(--font-body); cursor: pointer; border: none; backgroun
     position: static;
     z-index: auto;
     background: none;
-    padding: 24px var(--gutter) 28px;
+    padding: 16px var(--gutter) 18px;
     order: 2;
     flex-shrink: 0;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    gap: 16px;
+    gap: 10px;
   }
   .hero-actions {
     margin-top: auto;
@@ -1115,7 +1115,7 @@ button { font-family: var(--font-body); cursor: pointer; border: none; backgroun
 }
 @media (prefers-reduced-motion: no-preference) {
   .videos-track {
-    animation: scroll-videos 52s linear infinite;
+    animation: scroll-videos 90s linear infinite;
   }
   .videos-track:hover { animation-play-state: paused; }
 }
@@ -1294,21 +1294,22 @@ button { font-family: var(--font-body); cursor: pointer; border: none; backgroun
 
   /* --- HERO --- */
   .hero-content {
-    padding: 40px var(--gutter) 56px;
+    padding: 18px var(--gutter) 20px;
     order: 2;
   }
   .hero-photo {
     order: 1;
   }
+  .hero-badge { margin-bottom: 12px; }
   .hero-headline {
     font-size: clamp(48px, 12vw, 72px);
     line-height: 1.0;
-    margin-bottom: 14px;
+    margin-bottom: 10px;
   }
   .hero-sub {
-    font-size: clamp(16px, 4.2vw, 20px);
-    line-height: 1.55;
-    margin-bottom: 24px;
+    font-size: clamp(15px, 3.8vw, 18px);
+    line-height: 1.5;
+    margin-bottom: 16px;
     max-width: 100%;
   }
   .hero-badge { justify-content: center; }
@@ -1373,7 +1374,7 @@ button { font-family: var(--font-body); cursor: pointer; border: none; backgroun
   .sobre-content             { order: 1; padding-top: 0; padding-bottom: 0; }
   .sobre-photo .photo-frame  { order: 2; margin-top: 28px; aspect-ratio: 4/3; max-height: 380px; }
   .sobre-photo-caption       { order: 3; margin-top: 0; }
-  .sobre-cta                 { order: 4; margin-top: 28px; }
+  .sobre-cta                 { order: 4; margin-top: 28px; display: flex; justify-content: center; }
   .sobre-cta .btn-primary    { width: 100%; justify-content: center; }
   .sobre-credentials {
     flex-direction: column;
@@ -1423,12 +1424,20 @@ button { font-family: var(--font-body); cursor: pointer; border: none; backgroun
 
   /* --- RESULTADOS --- */
   .resultados-header { padding-inline: var(--gutter); }
-  /* Garantir que o carousel sempre seja horizontal */
   .videos-track {
     flex-direction: row;
     flex-wrap: nowrap;
+    animation: none !important;
   }
-  .videos-track-wrapper { overflow-x: hidden; }
+  .videos-track-wrapper {
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    -webkit-overflow-scrolling: touch;
+    scrollbar-width: none;
+  }
+  .videos-track-wrapper::-webkit-scrollbar { display: none; }
+  .video-card { scroll-snap-align: start; }
+  .video-card-clone { display: none; }
   .video-card {
     width: clamp(220px, 70vw, 300px);
     flex-shrink: 0;
@@ -1508,26 +1517,28 @@ button { font-family: var(--font-body); cursor: pointer; border: none; backgroun
 
   /* MÉTODO */
   .pilar { padding: 28px 18px; }
-  .metodo-headline { font-size: clamp(28px, 7.5vw, 42px); }
-  .pilar-title { font-size: 18px; }
-  .pilar-desc  { font-size: 15px; line-height: 1.65; }
+  .metodo-headline { font-size: clamp(34px, 9vw, 50px); }
+  .pilar-title { font-size: 20px; }
+  .pilar-desc  { font-size: 16px; line-height: 1.65; }
 
   /* SOBRE */
-  .sobre-headline { font-size: clamp(30px, 8vw, 44px); }
+  .sobre-headline { font-size: clamp(34px, 9vw, 50px); }
   .sobre-body { font-size: 16px; line-height: 1.75; }
   .sobre-photo .photo-frame { aspect-ratio: 3/2; }
 
   /* DEPOIMENTOS */
-  .depo-headline { font-size: clamp(28px, 7.5vw, 40px); }
+  .depo-headline { font-size: clamp(34px, 9vw, 50px); }
   .depo-card { padding: 24px 16px; gap: 18px; }
-  .depo-quote { font-size: 15px; line-height: 1.7; }
+  .depo-quote { font-size: 16px; line-height: 1.7; }
 
   /* RESULTADOS */
+  .resultados-headline { font-size: clamp(34px, 9vw, 50px); }
   .video-card { width: 85vw; }
   .videos-track { gap: 12px; }
 
   /* CTA FINAL */
-  .cta-headline { font-size: clamp(34px, 8.5vw, 54px); }
+  .cta-headline { font-size: clamp(40px, 10vw, 60px); }
+  .cta-deco .cta-stat .cta-stat-num { font-size: clamp(36px, 8vw, 52px); }
 
   /* FOOTER */
   .footer { padding: 40px var(--gutter) 28px; }

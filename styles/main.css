@@ -410,7 +410,7 @@ button { font-family: var(--font-body); cursor: pointer; border: none; backgroun
   .hero-photo {
     position: relative;
     width: 100%;
-    flex: 1 1 0;
+    flex: 2 1 0;
     min-height: 0;
     margin-top: 0;
     top: auto; right: auto; bottom: auto;
@@ -434,9 +434,16 @@ button { font-family: var(--font-body); cursor: pointer; border: none; backgroun
     position: static;
     z-index: auto;
     background: none;
-    padding: 28px var(--gutter) 32px;
+    padding: 24px var(--gutter) 28px;
     order: 2;
     flex-shrink: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 16px;
+  }
+  .hero-actions {
+    margin-top: auto;
   }
 }
 
@@ -1294,14 +1301,14 @@ button { font-family: var(--font-body); cursor: pointer; border: none; backgroun
     order: 1;
   }
   .hero-headline {
-    font-size: clamp(42px, 10vw, 64px);
-    line-height: 1.05;
-    margin-bottom: 20px;
+    font-size: clamp(48px, 12vw, 72px);
+    line-height: 1.0;
+    margin-bottom: 14px;
   }
   .hero-sub {
-    font-size: clamp(15px, 3.5vw, 17px);
-    line-height: 1.6;
-    margin-bottom: 36px;
+    font-size: clamp(16px, 4.2vw, 20px);
+    line-height: 1.55;
+    margin-bottom: 24px;
     max-width: 100%;
   }
   .hero-badge { justify-content: center; }
@@ -1489,9 +1496,9 @@ button { font-family: var(--font-body); cursor: pointer; border: none; backgroun
   .nav { padding: 14px var(--gutter); }
 
   /* HERO */
-  .hero-headline { font-size: clamp(36px, 10vw, 52px); line-height: 1.05; }
-  .hero-badge { flex-wrap: wrap; gap: 8px; margin-bottom: 24px; }
-  .hero-sub   { font-size: clamp(15px, 4vw, 17px); line-height: 1.65; }
+  .hero-headline { font-size: clamp(44px, 12vw, 60px); line-height: 1.0; }
+  .hero-badge { flex-wrap: wrap; gap: 8px; margin-bottom: 16px; }
+  .hero-sub   { font-size: clamp(16px, 4.5vw, 19px); line-height: 1.55; }
   .hero-mode-badges { flex-wrap: wrap; }
 
   /* PROBLEMA */
@@ -1528,8 +1535,8 @@ button { font-family: var(--font-body); cursor: pointer; border: none; backgroun
 
 /* ---------- 360px e abaixo ---------- */
 @media (max-width: 360px) {
-  .hero-headline { font-size: clamp(32px, 9vw, 40px); line-height: 1.05; }
-  .hero-sub { font-size: 15px; }
+  .hero-headline { font-size: clamp(38px, 11vw, 48px); line-height: 1.0; }
+  .hero-sub { font-size: 16px; }
   .hero-mode-badges .mode-badge { font-size: 11px; padding: 5px 12px; }
   .video-card { width: 85vw; }
 }
